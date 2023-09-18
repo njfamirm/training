@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_badges",
+  "info": {
+    "displayName": "badge",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "richtext"
+    }
+  }
+}
