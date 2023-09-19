@@ -1,114 +1,35 @@
-############################
-# OS X
-############################
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
 
+# OSX
+.DS_STORE
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-.Spotlight-V100
-.Trashes
 ._*
 
-
-############################
-# Linux
-############################
-
-*~
-
-
-############################
 # Windows
-############################
-
 Thumbs.db
-ehthumbs.db
 Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
 
+# Logs
+*.log*
 
-############################
-# Packages
-############################
+# Build
+.tsbuildinfo
+dist
 
-*.7z
-*.csv
-*.dat
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.seed
-*.so
-*.swo
-*.swp
-*.swn
-*.swm
-*.out
-*.pid
+# Dependencies
+node_modules
+package-lock.json
 
-
-############################
-# Logs and databases
-############################
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 .tmp
-*.log
-*.sql
-*.sqlite
-*.sqlite3
-
-
-############################
-# Misc.
-############################
-
-*#
-ssl
-.idea
-nbproject
-public/uploads/*
-!public/uploads/.gitkeep
-
-############################
-# Node.js
-############################
-
-lib-cov
-lcov.info
-pids
-logs
-results
-node_modules
-.node_history
-
-############################
-# Tests
-############################
-
-coverage
-
-############################
-# Strapi
-############################
-
-.env
-license.txt
-exports
-*.cache
-dist
-build
+.cache
 .strapi-updater.json
