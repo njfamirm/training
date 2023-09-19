@@ -1,16 +1,23 @@
 {
+  "extends": "@strapi/typescript-utils/tsconfigs/server",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "moduleResolution": "Node",
-    "lib": ["ES2020"],
-    "strict": false,
-    "incremental": true,
-    "resolveJsonModule": true,
-    "noEmitOnError": true,
-    "tsBuildInfoFile": ".tsbuildinfo"
-  }
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": [
+    "./",
+    "./**/*.ts",
+    "./**/*.js",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules/",
+    "build/",
+    "dist/",
+    ".cache/",
+    ".tmp/",
+    "src/admin/",
+    "**/*.test.*",
+    "src/plugins/**"
+  ]
 }
